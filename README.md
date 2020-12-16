@@ -15,7 +15,7 @@
 
 ## About The Project
 
-![Screen Shot](images/screenshot.png)
+![Screen Shot](images/screenshot.PNG)
 
 This project was created to explore some of the simple features of Tkinter. This was my first experience using Tkinter so I decided to create a game everyone knows and loves.
 
