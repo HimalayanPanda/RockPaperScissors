@@ -5,9 +5,6 @@ win = 'YOU WIN!'
 lose = 'YOU LOSE!'
 tie = 'ITS A DRAW!'
 
-#Creating variables that hold the icons
-#rockImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\icons\rock.png")
-
 
 #Creating a random number generator that creates the computer's choice
 def numGen():
@@ -61,11 +58,16 @@ def selectScissors():
 #Creating the GUI using Tkinter
 root = Tk()
 
+#Creating variables that hold the icons
+rockImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\icons\rock.png")
+paperImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\icons\paper.png")
+scissorsImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\icons\scissors.png")
+
 titleLbl = Label(root, text='Rock Paper Scissors!')
 promptLbl = Label(root, text='click a button')
-rockBtn = Button(root, text='  rock   ', padx=20, pady=7, bg='light blue', command=selectRock)#, image=rockImg, compound=left)
-paperBtn = Button(root, text='  paper ' , padx=20, pady=7, bg='light green', command=selectPaper)
-scissorsBtn = Button(root, text='scissors', padx=20, pady=7, bg='pink', command=selectScissors)
+rockBtn = Button(root, text='  rock   ', padx=20, pady=7, bg='light blue', command=selectRock, image=rockImg, compound=RIGHT)
+paperBtn = Button(root, text='  paper ' , padx=20, pady=7, bg='light green', command=selectPaper, image=paperImg, compound=RIGHT)
+scissorsBtn = Button(root, text='scissors', padx=25, pady=7, bg='pink', command=selectScissors, image=scissorsImg, compound=RIGHT)
 responceLbl = Label(root)
 
 titleLbl.pack()
