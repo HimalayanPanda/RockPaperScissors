@@ -69,5 +69,3 @@ Distributed under the MIT License. See [LICENSE](https://github.com/HimalayanPan
 ## Acknowledgements
 
 * [ShaanCoding](https://github.com/ShaanCoding/)
-* []()
-* []()
