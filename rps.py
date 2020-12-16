@@ -63,7 +63,7 @@ rockImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\
 paperImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\icons\paper.png")
 scissorsImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\icons\scissors.png")
 
-titleLbl = Label(root, text='Rock Paper Scissors!')
+titleLbl = Label(root, text='Rock Paper Scissors!', font=('anson', 25))
 promptLbl = Label(root, text='click a button')
 rockBtn = Button(root, text='  rock   ', padx=20, pady=7, bg='light blue', command=selectRock, image=rockImg, compound=RIGHT)
 paperBtn = Button(root, text='  paper ' , padx=20, pady=7, bg='light green', command=selectPaper, image=paperImg, compound=RIGHT)
