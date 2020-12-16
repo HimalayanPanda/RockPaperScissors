@@ -57,18 +57,20 @@ def selectScissors():
 
 #Creating the GUI using Tkinter
 root = Tk()
+root.title("Rock Paper Scissors")
+root.geometry("450x375")
 
 #Creating variables that hold the icons
 rockImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\icons\rock.png")
 paperImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\icons\paper.png")
 scissorsImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\icons\scissors.png")
 
-titleLbl = Label(root, text='Rock Paper Scissors!', font=('anson', 25), padx=20)
+titleLbl = Label(root, text='Rock Paper Scissors!', font=('anson', 25), padx=20, pady=10)
 promptLbl = Label(root, text='click a button')
-rockBtn = Button(root, text='  rock   ', padx=20, pady=7, bg='light blue', command=selectRock, image=rockImg, compound=RIGHT)
-paperBtn = Button(root, text='  paper ' , padx=20, pady=7, bg='light green', command=selectPaper, image=paperImg, compound=RIGHT)
-scissorsBtn = Button(root, text='scissors', padx=25, pady=12, bg='pink', command=selectScissors, image=scissorsImg, compound=RIGHT)
-responceLbl = Label(root, font=('roboto', 14))
+rockBtn = Button(root, text='  Rock   ', padx=20, pady=7, bg='light blue', command=selectRock, image=rockImg, compound=RIGHT)
+paperBtn = Button(root, text='  Paper ' , padx=20, pady=7, bg='light green', command=selectPaper, image=paperImg, compound=RIGHT)
+scissorsBtn = Button(root, text='Scissors', padx=25, pady=12, bg='pink', command=selectScissors, image=scissorsImg, compound=RIGHT)
+responceLbl = Label(root, font=('roboto', 14), pady=5)
 
 titleLbl.pack()
 promptLbl.pack()
