@@ -5,10 +5,13 @@ win = 'YOU WIN!'
 lose = 'YOU LOSE!'
 tie = 'ITS A DRAW!'
 
+#Creating variables that hold the icons
+#rockImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\icons\rock.png")
+
+
 #Creating a random number generator that creates the computer's choice
 def numGen():
     value = randint(0,2)
-    print(value)
     return(value)
 
 #Comparing the computer's chouce with the player's choice
@@ -60,7 +63,7 @@ root = Tk()
 
 titleLbl = Label(root, text='Rock Paper Scissors!')
 promptLbl = Label(root, text='click a button')
-rockBtn = Button(root, text='  rock   ', padx=20, pady=7, bg='light blue', command=selectRock)
+rockBtn = Button(root, text='  rock   ', padx=20, pady=7, bg='light blue', command=selectRock)#, image=rockImg, compound=left)
 paperBtn = Button(root, text='  paper ' , padx=20, pady=7, bg='light green', command=selectPaper)
 scissorsBtn = Button(root, text='scissors', padx=20, pady=7, bg='pink', command=selectScissors)
 responceLbl = Label(root)
