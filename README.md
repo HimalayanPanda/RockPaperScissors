@@ -1,7 +1,8 @@
-# RockPaperScissors
-A simple rock paper scissors game with python
-<br/>
-    <a href="https://github.com/HimalayanPanda/RockPaperScissors"><strong>Explore the docs »</strong></a>
+<p align="center">
+  <h3 align="center">Rock Paper Scissors</h3>
+
+  <p align="center">
+    A simple game of rock paper scissors!
     <br/>
     <br/>
     <a href="https://github.com/HimalayanPanda/RockPaperScissors/issues">Report Bug</a>
