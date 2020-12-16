@@ -16,33 +16,33 @@ def compareWithComputer(playerInt):
     compInt = numGen()
     if(compInt == 0):
         if(playerInt == 0):
-            return tie
+            return 'computer played rock: ' + tie
         
         elif (playerInt == 1):
-            return win
+            return 'computer played rock: ' + win
         
         else:
-            return lose
+            return 'computer played rock: ' + lose
 
     elif(compInt == 1):
         if(playerInt == 0):
-            return lose
+            return 'computer played paper: ' + lose
         
         elif (playerInt == 1):
-            return tie
+            return 'computer played paper: ' + tie
         
         else:
-            return win
+            return 'computer played paper: ' + win
     
     else:
         if(playerInt == 0):
-            return win
+            return 'computer played scissors: ' + win
         
         elif (playerInt == 1):
-            return lose
+            return 'computer played scissors: ' + lose
         
         else:
-            return tie
+            return 'computer played scissors: ' + tie
         
 #Creating the methods for the different buttons
 def selectRock():
@@ -63,12 +63,12 @@ rockImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\
 paperImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\icons\paper.png")
 scissorsImg = PhotoImage(file = r"C:\Users\adity\Documents\GitHub\RockPaperScissors\icons\scissors.png")
 
-titleLbl = Label(root, text='Rock Paper Scissors!', font=('anson', 25))
+titleLbl = Label(root, text='Rock Paper Scissors!', font=('anson', 25), padx=20)
 promptLbl = Label(root, text='click a button')
 rockBtn = Button(root, text='  rock   ', padx=20, pady=7, bg='light blue', command=selectRock, image=rockImg, compound=RIGHT)
 paperBtn = Button(root, text='  paper ' , padx=20, pady=7, bg='light green', command=selectPaper, image=paperImg, compound=RIGHT)
 scissorsBtn = Button(root, text='scissors', padx=25, pady=7, bg='pink', command=selectScissors, image=scissorsImg, compound=RIGHT)
-responceLbl = Label(root)
+responceLbl = Label(root, font=('roboto', 14))
 
 titleLbl.pack()
 promptLbl.pack()
